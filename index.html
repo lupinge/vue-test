@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>vue</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/vue-v1.0.26.js"></script>
+</head>
+<body>
+<div id="site" class="wrap">
+    {{* message }}
+
+    <input type="text" v-model="message">
+
+    <mycomponent v-bind:parent-msg="message">
+
+    </mycomponent>
+
+    <script type="x/template" id="mycomponent">
+        <div class="mask">
+            父组件中：<input type="text" v-model="parentMsg">
+            子组件中：<input type="text" v-model="msg">
+        </div>
+    </script>
+</div>
+
+</body>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,30 @@
+body, ul, ol, li, p, img, h1, h2, h3, h4, h5, h6, form, button, iframe {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  zoom: 1;
+}
+img{
+  vertical-align: top;
+  border:0;
+}
+.sm-line {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(top, transparent, transparent 50%, #e5e5e5 50%);
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 1px;
+  border: 0;
+}
+.sm-line.vertical {
+    background-image: -webkit-linear-gradient(left, transparent, transparent 50%, #e5e5e5 50%);
+    background-size: 1px 100%;
+    width: 1px;
+}
+.sm-line.top {
+    background-image: -webkit-linear-gradient(top, #e5e5e5, #e5e5e5 50%, transparent 50%);
+}
