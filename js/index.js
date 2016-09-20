@@ -15,7 +15,7 @@ var mycomponent = Vue.component('mycomponent', {
 var app = new Vue({
     el:'#site',
     data:{
-        message: 'hello world!'
+        message: 'hello yuewen'
     },
     methods: {
         chooseMaster: function(e){
@@ -23,7 +23,6 @@ var app = new Vue({
             this.choosedMaster = this.masters[index];
             this.indexActive = false;
             this.masterActive = true;
-            $('html,body').animate({scrollTop: '0px'}, 0);
         }
     },
     created: function() {
